@@ -1,5 +1,6 @@
 import React from 'react';
 import './Intro.css';
+import '../FloatingDiv/FloatingDiv';
 import  github from '../../../src/assets/img/github.png';
 import ellipse1 from '../../assets/img/Ellipse 1.png';
 import ellipse2 from '../../assets/img/Ellipse 2.png';
@@ -24,7 +25,9 @@ const Intro = () => {
         <img src= {ellipse2} alt="" className='el2' />
           <img src= {ellipse1} alt=""  className='el1'/>  
           <img src= {perfil} alt="" className='perfil'/> 
-
+        <div>
+          <FloatingDiv/>
+        </div>
         </div>
       
     </div>

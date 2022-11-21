@@ -1,0 +1,9 @@
+.card-content {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-top: 5rem;
+    justify-content: center;
+    gap: 9rem;
+  }
+
+  
