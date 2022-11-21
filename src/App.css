@@ -6,7 +6,9 @@
   --black: #242D49;
   --gray: #788097;
   --blueCard: #DDF8FE;
- --purple: rgb(238 210) 
+ --purple: rgb(238 210) ;
+  --blue: #0860A8;
+  
 }
 
 
@@ -25,14 +27,14 @@
   color: white;
   font-size: 16px;
   padding: 11px 26px;
-  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%); 
-  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  background: linear-gradient(180deg, #0860A8 26.71%, #000056 99.36%); 
+  box-shadow: 0px 20px 24px 3px (#000056);
 }
 
 .button:hover{
 background: white;
 cursor: pointer;
-color: var(--orange);
- border: solid 1px var(--orange);
+color: var(--blue);
+ border: solid 1px var(--blue);
 }
 
