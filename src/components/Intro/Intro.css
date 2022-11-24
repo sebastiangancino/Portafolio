@@ -111,4 +111,14 @@ width: 120px;
     width: 45%;
 }
 
+.blur{
+    filter: blur(72px);
+    left: 565;
+    z-index: -9;
+    border-radius: 50%;
+    width: 22rem;
+    height: 14rem;
+    position: absolute;
+    background: #edd0ff;
+}
  

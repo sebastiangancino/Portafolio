@@ -33,6 +33,15 @@ const Intro = () => {
             <FloatingDiv image = {laptop} txt1 = 'Web' txt2 = 'Developer' />      
         </div>
 
+        <div className="blur" style={{background: "rgb(238 210 255)"}}></div>
+        <div className="blur"
+        style={{
+          background: 'C1F5FF',
+          top: '17rem' ,
+          width: '21rem',
+          height: '-9rem'
+        }}
+        ></div>
         <div style={{top: '18rem', left: '0'}}>
         <FloatingDiv image = {sandbox} txt1 = 'Backend' txt2 = 'Frontend' />
 
