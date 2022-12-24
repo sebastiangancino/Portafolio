@@ -1,10 +1,10 @@
-
+/* rcfc snippet  */
+import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import "./App.css";
 import Intro from "./components/Intro/Intro";
-import Test from "./components/Intro/test";
 import Services from './components/Servicess/Services';
-import Experiencie from './components/Experience/Experiencie';
+import Experiencie from './components/Experience/Experience';
 import Works from './components/Works/Works';
 function App(){
   return (

@@ -28,7 +28,7 @@ const Intro = () => {
           <img src= {ellipse2} alt="" className='el2' />
           <img src= {ellipse1} alt=""  className='el1'/>  
           <img src= {perfil} alt="" className='perfil'/> 
-          <img src={laughing} className ='laughing' />
+          <img src={laughing} alt="" className ='laughing' />
           <div style={{top:'-4%', left: '68%'}}>
             <FloatingDiv image = {laptop} txt1 = 'Web' txt2 = 'Developer' />      
         </div>
