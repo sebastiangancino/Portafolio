@@ -17,6 +17,31 @@ function Works() {
             <br />
             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestias incidunt impedit quaerat consequatur. Est deleniti voluptas vel nihil, amet cum itaque laudantium soluta sit fugiat? Dolor incidunt nam quibusdam!</span>
         </div>
+
+                {/* rigth side */}
+           <div className="w-right">
+             <div className="mainCircle">
+                <div className="w-secCircle">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968919.png" alt="" />
+                </div>
+                <div className="w-secCircle">
+                  <img src="https://cdn.icon-icons.com/icons2/2845/PNG/512/squarespace_logo_icon_181252.png" alt="" />
+                </div>
+                <div className="w-secCircle">
+                   <img src="https://3.bp.blogspot.com/-oRSUw_TmO9o/XIb61m88fcI/AAAAAAAAIq0/vnxl2zzsXEQsnHI2fH4GjKu_ZT0urRo4wCK4BGAYYCw/s1600/icon%2Bcss%2B3.png" alt=""  />
+                </div>
+                <div className="w-secCircle">
+                  <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="" />
+                </div>
+                <div className="w-secCircle">
+                  <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="" />
+                </div>
+
+                      {/*background circles*/}
+                      <div className="back-circle blueCircle"></div>
+                      <div className="back-circle yellowCircle"></div>
+             </div>
+           </div>
     </div>
   )
 }
