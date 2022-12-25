@@ -1,0 +1,46 @@
+.exp-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vh;
+    margin-bottom: 8rem;
+}
+
+.ex-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle{
+
+width: 4rem;
+height: 4rem;
+position: relative;
+justify-content: center;
+display: flex;
+border-radius: 100%;
+background: white;
+font-weight: bold;
+font-size: 1.5rem;
+margin-bottom: 2rem;
+align-items: center;
+    
+}
+.circle::before{
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 2px;
+}
+
+.ex-card span:nth-of-type(2){
+    color: var(--blue) ;
+}
