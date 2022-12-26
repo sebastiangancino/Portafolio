@@ -21,6 +21,8 @@
     height: 18rem;
     top: 2rem;
     background: white;
+    box-shadow: var(--smboxShadow);
+    border: solid 2px #ebebeb;
 }
 
 .mainCircle>*{
@@ -61,7 +63,6 @@
         border: 5px solid #ebebeb;
         align-items: center;
         justify-content: center;
-        background: "none";
         box-shadow: var(--smboxShadow);
         background: white;
     }
