@@ -80,6 +80,10 @@ width: 120px;
     z-index: 1;
 }
 
+.i-right .emoji{
+ width: 150px;
+}
+
 .i-right>:nth-child(1) {
     z-index: 1;
     transform: scale(0.59);

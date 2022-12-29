@@ -10,9 +10,11 @@ import sandbox from '../../assets/img/sandbox.png';
 import laughing from '../../assets/img/laughing.png';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
+import {AnimatePresence, motion} from "framer-motion/dist/framer-motion"; 
 
 const Intro = () => {
 
+  const transition  = {duration: 2, type:'spring'}
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
@@ -34,10 +36,27 @@ const Intro = () => {
           <img src= {ellipse2} alt="" className='el2' />
           <img src= {ellipse1} alt=""  className='el1'/>  
           <img src= {perfil} alt="" className='perfil'/> 
-          <img src={laughing} alt="" className ='laughing' />
-          <div style={{top:'-4%', left: '68%'}}>
-            <FloatingDiv image = {laptop} txt1 = 'Web' txt2 = 'Developer' />      
-        </div>
+
+          <motion.img 
+          initial = {{left: '26%'}}
+          whileInView = {{left: '14%'}}
+          transition = {transition}
+           src={laughing} alt="" 
+           className='emoji'
+           />
+
+         
+
+          <motion.div 
+          initial={{top: '-4%', left:'74%'}}
+          whileInView={{left:'68%'}}
+          transition={transition}
+          className="floating-div"
+          style={{top:'-4%', left: '68%'}}>
+            <FloatingDiv img = {laptop} txt1 = 'Web' txt2 = 'Developer'/>      
+        </motion.div>
+
+        
 
         <div className="blur" style={{background: "rgb(238 210 255)"}}></div>
         <div className="blur"
@@ -48,10 +67,15 @@ const Intro = () => {
           height: '-9rem'
         }}
         ></div>
-        <div style={{top: '18rem', left: '0'}}>
+        <motion.div 
+          initial={{top: '74%', left:'-10%'}}
+          whileInView={{left:'8%'}}
+          transition={transition}
+          className="floating-div"
+        style={{top: '18rem', left: '0'}}>
         <FloatingDiv image = {sandbox} txt1 = 'Backend' txt2 = 'Frontend' />
 
-        </div>
+        </motion.div>
         </div>
       
     </div>

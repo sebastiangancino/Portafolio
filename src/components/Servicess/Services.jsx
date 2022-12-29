@@ -2,12 +2,17 @@ import React from 'react';
 import '../Servicess/Services.css';
 import Card from '../Card/Card';
 import web from '../../assets/img/web-design.png'
-import glasses from '../../assets/img/sunglasses.png'
 import cv from './cv.pdf'
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
+import {AnimatePresence, motion} from "framer-motion/dist/framer-motion"; 
+
+
 
   const Services =() => {
+
+    const transition  = {duration: 4, type:'spring'}
+
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     return (
@@ -32,33 +37,45 @@ import { themeContext } from '../../Context';
         {/* rigth side */}
         <div className='cards'>
           
-          <div style={{left: '14rem'}}>
+          <motion.div 
+          initial = {{left: '-1%'}}
+          whileInView = {{left: '-74%'}}
+          transition = {transition}
+          style={{left: '23rem', top:'-.5rem', right:"0"}}>
           <Card
           emoji = {web}
           heading = {"Desing"}
           detail = {"Figma, CSS, HTLM5, REACT, NPM, SQL"}
           />
-        </div>
+        </motion.div>
 
          {/* second card */}
-         <div style={{top: '24rem', right: '24rem'}}>
+         <motion.div 
+         initial = {{top: '16%'}}
+         whileInView = {{top: '14%'}}
+         transition = {transition}
+         style={{top: '11.5rem', right: '0rem'}}>
          <Card
           emoji = {web}
           heading = {"Desing"}
           detail = {"Figma, CSS, HTLM5, REACT, NPM, SQL"}
           />
-         </div>
+         </motion.div>
 
          {/* 3th card */}
-         <div style={ {top: '24rem', left:'14rem'}}>
+         <motion.div
+         initial = {{left: '16%'}}
+         whileInView = {{left: '74%'}}
+         transition = {transition}
+         style={ {left:'23rem', bottom: '4rem'}}>
          <Card
           emoji = {web}
           heading = {"Desing"}
           detail = {"Figma, CSS, HTLM5, REACT, NPM, SQL"}
           />
-                   <div className="blur s-blur2" style= {{background: "var(--blue)"}}></div>
+          <div className="blur s-blur2" style= {{background: "#22AFE4"}}></div>
 
-         </div>
+         </motion.div>
 
         </div>
         
