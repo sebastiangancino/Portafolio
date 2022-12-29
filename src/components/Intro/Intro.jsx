@@ -8,13 +8,19 @@ import perfil from '../../assets/img/perfil-portafolio.png';
 import laptop from '../../assets/img/programming.png';
 import sandbox from '../../assets/img/sandbox.png';
 import laughing from '../../assets/img/laughing.png';
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
 
 const Intro = () => {
+
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
     <div className="intro">
         <div className="i-left">
             <div className="i-name">
-                <span>I'm</span>
+                <span style={{color: darkMode? 'white': ''}}>I'm</span>
                 <span>Sebastián Gancino</span>
                 <span>Software developer, with juniors kills in React, Nodejs, Html, Css</span>
             </div>

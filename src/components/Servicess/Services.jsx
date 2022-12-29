@@ -4,14 +4,18 @@ import Card from '../Card/Card';
 import web from '../../assets/img/web-design.png'
 import glasses from '../../assets/img/sunglasses.png'
 import cv from './cv.pdf'
+import { useContext } from 'react';
+import { themeContext } from '../../Context';
 
   const Services =() => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
     return (
       <div className="services">
 
         {/* left side */}
         <div className="awesome">
-            <span>My awesome</span>
+            <span style={{color: darkMode? 'white': ''}}> My awesome</span>
             <span>Services</span>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore totam iure, quidem voluptas quae aut inventore eius vel quas reprehenderit beatae quibusdam ex dolorem illum. Doloribus cupiditate similique ab dolorem.
             <br/>
@@ -37,9 +41,9 @@ import cv from './cv.pdf'
         </div>
 
          {/* second card */}
-         <div style={ {top: '12rem', left:'-4rem'}}>
+         <div style={{top: '24rem', right: '24rem'}}>
          <Card
-          emoji = {glasses}
+          emoji = {web}
           heading = {"Desing"}
           detail = {"Figma, CSS, HTLM5, REACT, NPM, SQL"}
           />
@@ -48,7 +52,7 @@ import cv from './cv.pdf'
          {/* 3th card */}
          <div style={ {top: '24rem', left:'14rem'}}>
          <Card
-          emoji = {glasses}
+          emoji = {web}
           heading = {"Desing"}
           detail = {"Figma, CSS, HTLM5, REACT, NPM, SQL"}
           />

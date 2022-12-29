@@ -1,11 +1,15 @@
 import React from 'react'
 import '../Works/Works.css'
+import { useContext } from 'react';
+import { themeContext } from '../../Context';
 
 function Works() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className='works'>
        <div className="awesome">
-            <span>Works for all these</span>
+            <span style={{color: darkMode? 'white': ''}}>Works for all these</span>
             <span>Brands and Clients</span>
             <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore totam iure, quidem voluptas quae aut inventore eius vel quas reprehenderit beatae quibusdam ex dolorem illum. Doloribus cupiditate similique ab dolorem.
             <br/>
