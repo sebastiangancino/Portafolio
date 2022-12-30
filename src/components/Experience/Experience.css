@@ -1,10 +1,13 @@
 .exp-cards{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 5rem;
     height: 30vh;
-    margin-bottom: 8rem;
+    padding-left: 3rem;
+    margin-bottom: 5rem;
+    position: relative;
+    top: -6rem;
 }
 
 .ex-card{

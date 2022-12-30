@@ -8,7 +8,6 @@ import { themeContext } from '../../Context';
 import {AnimatePresence, motion} from "framer-motion/dist/framer-motion"; 
 
 
-
   const Services =() => {
 
     const transition  = {duration: 4, type:'spring'}
@@ -16,7 +15,7 @@ import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     return (
-      <div className="services">
+      <div className="services" id='Services'>
 
         {/* left side */}
         <div className="awesome">
@@ -38,9 +37,9 @@ import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
         <div className='cards'>
           
           <motion.div 
-          initial = {{left: '-1%'}}
-          whileInView = {{left: '-74%'}}
-          transition = {transition}
+           initial={{ left: "25rem" }}
+           whileInView={{ left: "14rem" }}
+           transition={transition}
           style={{left: '23rem', top:'-.5rem', right:"0"}}>
           <Card
           emoji = {web}
@@ -51,10 +50,13 @@ import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
 
          {/* second card */}
          <motion.div 
-         initial = {{top: '16%'}}
-         whileInView = {{top: '14%'}}
-         transition = {transition}
-         style={{top: '11.5rem', right: '0rem'}}>
+         initial={{ left: "5rem" }}
+         whileInView={{ left: "-11rem" }}
+         animate= {{rotate:20}}
+         
+         transition={transition}
+
+         style={{top: '11.5rem'}}>
          <Card
           emoji = {web}
           heading = {"Desing"}
@@ -64,9 +66,11 @@ import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
 
          {/* 3th card */}
          <motion.div
-         initial = {{left: '16%'}}
-         whileInView = {{left: '74%'}}
-         transition = {transition}
+         initial={{ left: "29rem" }}
+         whileInView={{ left: "14rem" }}
+         animate= {{rotate:-20}}
+         
+         transition={transition}
          style={ {left:'23rem', bottom: '4rem'}}>
          <Card
           emoji = {web}

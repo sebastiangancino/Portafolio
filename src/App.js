@@ -27,13 +27,13 @@ function App(){
     }}>
     <Navbar/>
     <Intro />
-     <Services/>{/*
+     <Services/>
     <Experiencie/>
     <Works/>
     <Portfolio/>
     <Testimonials/>
     <Contact/>
-    <Footer/> */}
+    <Footer/> 
     </div>
   );
   
