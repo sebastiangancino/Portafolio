@@ -1,15 +1,25 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,700&display=swap');
+
+
 .n-wrapper{
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    padding: 7px 3rem;
+    font-family: 'Poppins', 'sans-serif'!important;
+    position: fixed;
+    background: #f4f4f4;
+    width: 100%;
+    z-index: 2;
+    border-bottom: solid .1px #f2f2f2;
 }
 
 .n-left{
-    flex: 1;
+    flex: 1 1;
     align-items: center;
     display: flex;
+    grid-gap: 2rem;
     gap: 2rem;
+    padding: 0 1rem;
 }
 
 .n-name{
@@ -27,19 +37,29 @@
 
 .n-list{
     flex: 10;
+   /*  position: absolute;
+    top: -500px;
+    left: -400px; */
 }
 
 .n-list>ul {
     display: flex;
+    grid-gap: 2rem;
     gap: 2rem;
     margin-right: 4rem;
 }
+
 
 .n-list>ul,li:hover{
     cursor: pointer;
     color: var(--blue);
 }
 
+.n-list li {
+    font-weight: 300;
+}
+
 .n-button{
     flex: 2;
 }
+

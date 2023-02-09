@@ -8,31 +8,31 @@ const Navbar = () => {
   return (
     <div className="n-wrapper" id='Navbar'>
         <div className="n-left">
-            <div className="n-name">Sebas Gancino</div>
+            <div className="n-name">Sebastián Gancino</div>
             <Toggle/>
         </div>
         <div className="n-right">
             <div className="n-list">
                 <ul style = {{listStyleType: 'none'}}>
                     <Link spy= {true} to = 'Navbar' smooth={true} activeClass = "active">
-                    <li>Home</li>
+                    <li>HOME</li>
                     </Link>
 
                     <Link spy= {true} to = 'Services' smooth={true}>
-                    <li>Services</li>
+                    <li>SERVICES</li>
                     </Link>
 
                     <Link spy= {true} to = 'Experience' smooth={true}>
-                    <li>Experience</li>
+                    <li>EXPERIENCE</li>
                     </Link>
 
                     <Link spy= {true} to = 'Testimonials' smooth={true}>
-                    <li>Testimonials</li>
+                    <li>TESTIMONIALS</li>
                     </Link>
                 </ul>
             </div>
             <button className="button n-button">Contact</button>         
-            
+           
         </div>
     </div>
   )

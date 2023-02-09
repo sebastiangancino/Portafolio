@@ -10,7 +10,7 @@ import sandbox from '../../assets/img/sandbox.png';
 import laughing from '../../assets/img/laughing.png';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
-import {AnimatePresence, motion} from "framer-motion/dist/framer-motion"; 
+import { motion} from "framer-motion/dist/framer-motion";   /* AnimatePresence */
 
 const Intro = () => {
 

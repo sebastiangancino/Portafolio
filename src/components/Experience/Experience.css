@@ -1,7 +1,7 @@
 .exp-cards{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 5rem;
     height: 30vh;
     padding-left: 3rem;

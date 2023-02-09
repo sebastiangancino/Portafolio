@@ -5,7 +5,7 @@ import web from '../../assets/img/web-design.png'
 import cv from './cv.pdf'
 import { useContext } from 'react';
 import { themeContext } from '../../Context';
-import {AnimatePresence, motion} from "framer-motion/dist/framer-motion"; 
+import {motion} from "framer-motion/dist/framer-motion"; /* AnimatePresence */ 
 
 
   const Services =() => {
